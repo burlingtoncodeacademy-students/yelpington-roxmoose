@@ -1,0 +1,11 @@
+{
+    "id": "saigon-kitchen",
+    "name": "Saigon Kitchen",
+    "address": "112 North St",
+    "phoneNumber": "(802) 540-0417",
+    "hours": "Wednesday - Friday 11:30am - 9pm | Saturday - Sunday 12pm - 9pm | Monday 11:30am - 9pm",
+    "website": "https://saigonkitchenvt.wixsite.com/website",
+    "latitude": 44.48471290577092, 
+    "longitude": -73.217485046861,
+    "notes": "Really close to my house"
+}

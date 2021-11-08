@@ -1,0 +1,11 @@
+{
+    "id": "taco-gordo",
+    "name": "Taco Gordo",
+    "address": "208 N Winooski Ave",
+    "phoneNumber": "(802) 540-0770",
+    "hours": "Tuesday - Saturday 5pm - 10pm",
+    "website": "https://www.tacogordovt.com/",
+    "latitude": 44.4860165622065, 
+    "longitude": -73.20994362508117,
+    "notes": "Maybe the best Mexican cuisine in Burlington, good cocktails, and a fun place to hang out, indoors or on their patio"
+}

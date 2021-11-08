@@ -1,0 +1,11 @@
+{
+    "id": "poppy-cafe",
+    "name": "Poppy Cafe",
+    "address": "88 Oak St",
+    "phoneNumber": "(802) 393-4711",
+    "hours": "Tuesday - Friday 11am - 2:30pm",
+    "website": "https://www.poppyvt.com/",
+    "latitude": 44.48963843474987, 
+    "longitude": -73.21004227251197, 
+    "notes": "Creative and unbelievably drop-dead delicious sandwiches, with a rotating menu. Also check out Cafe Mamajuana -- open in the same location during evening hours!"
+}
