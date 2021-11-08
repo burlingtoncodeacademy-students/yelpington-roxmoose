@@ -1,0 +1,11 @@
+{
+    "id": "scout",
+    "name": "Scout & Co",
+    "address": "237 North Ave",
+    "phoneNumber": "(802) 540-0349",
+    "hours": "Monday - Thursday 7am - 5pm | Friday 7am - 6pm | Saturday - Sunday 8am - 6pm",
+    "website": "https://www.scoutandcompanyvt.com/",
+    "latitude": 44.48786248835677, 
+    "longitude": -73.22535350152101,
+    "notes": "Third wave coffee shop with the minimalist decor to match. The drinks are indeed high quality, and they have really unique ice cream flavors, but what you really gotta go there for are the sourdough donuts from Miss Weinerz, currently available Wednesdays-Saturdays (but they go fast!)"
+}

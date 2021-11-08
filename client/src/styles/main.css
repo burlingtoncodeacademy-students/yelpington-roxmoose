@@ -1,0 +1,49 @@
+body {
+  font-family: "Gill Sans";
+  color: rgb(8, 71, 100);
+  margin-left: 20px;
+}
+
+p.list {
+  line-height: 0.3
+}
+
+#home-grid {
+  display: grid;
+  grid-template-columns: auto auto;
+}
+
+#restaurant {
+  margin-left: 30px;
+  margin-right: 50vw;
+}
+
+span.category {
+  font-weight: bold;
+}
+
+/* Navigation links on Home page */
+.nav-link {
+  color: rgb(8, 71, 100);
+  text-decoration: none;
+  padding: 4px;
+}
+
+.nav-link:hover {
+background-color: rgb(255, 243, 80)
+}
+
+/* "Back to Home" link on Restaurant page */
+.single-link {
+  text-decoration: none;
+  padding: 4px;
+  border: 1.5px solid black;
+  background-color: rgb(8, 71, 100);
+  color: white;
+}
+
+.single-link:hover {
+background-color: rgb(255, 243, 80);
+color: black;
+border: none
+}
