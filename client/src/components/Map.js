@@ -1,3 +1,6 @@
+// This file contains the map used on the home page.
+
+// Necessary Imports:
 import "../styles/main.css";
 import { MapContainer, TileLayer, Marker, Popup} from "react-leaflet"; // tile layer name: CartoDB.Voyager
 import L from "leaflet";
@@ -17,12 +20,15 @@ let DefaultIcon = L.icon({
 function Map(props) {
 
   return (
+    // Setting up map center, zoom, and width+height. These won't change on this page (unless user manually zooms / moves around)
     <MapContainer
       center={props.center}
       zoom={props.zoom}
       style={{ height: "600px", width: "600px" }}
     >
+      {/* Bringing in a map I like */}
       <TileLayer url="https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png" attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>' />
+      {/* Placing markers (locations passed from Home page) and pop-ups that include restaurant links */}
       <Marker position={props.marker1} icon={DefaultIcon}><Popup><a href="/restaurant/china-express-2" className="nav-link">China Express 2</a></Popup></Marker>
       <Marker position={props.marker2} icon={DefaultIcon}><Popup><a href="/restaurant/nunyuns" className="nav-link">Nunyuns</a></Popup></Marker>
       <Marker position={props.marker3} icon={DefaultIcon}><Popup><a href="/restaurant/pho-hong" className="nav-link">Pho Hong</a></Popup></Marker>

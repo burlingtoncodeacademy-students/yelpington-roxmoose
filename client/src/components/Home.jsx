@@ -1,7 +1,8 @@
-// import "./App.css";
+// This file is the home page.
+
+// Necessary imports:
 import React from "react";
 import { Link } from "react-router-dom"; // for react router - having a separate "page" for each restaurant
-// Each restaurant's separate "page":
 import Map from "./Map.js";
 import "../styles/main.css";
 
@@ -10,7 +11,7 @@ function Home() {
   const center = [44.486130615466685, -73.2160679713857];
   const zoom = 15
 
-  // Markers for each restaurant:
+  // Lat & longs for each restaurant to set up marker locations:
   let markerChinaExpress2 = [44.48466989157461, -73.22119647631418];
   let markerNunyuns = [44.48447935697636, -73.2178752767957];
   let markerPhoHong = [44.488854309034785, -73.20709166337835];
@@ -28,6 +29,7 @@ function Home() {
       </header>
       <div id="home-grid">
         <div id="map">
+          {/* Importing the map, and passing in a marker for each restaurant */}
           <Map
             center={center}
             zoom={zoom}
@@ -41,6 +43,7 @@ function Home() {
             marker8={markerTacoGordo}
           />
         </div>
+        {/* Navigation Links (via React Router) */}
         <nav id="restaurant-list">
           <h2>Restaurants List:</h2>
           <p class="list">

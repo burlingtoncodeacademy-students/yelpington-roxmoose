@@ -1,23 +1,30 @@
+/* One CSS page to rule them all */
+
+/* Applicable to everything: Font, font color, page margin */
 body {
   font-family: "Gill Sans";
   color: rgb(8, 71, 100);
   margin-left: 20px;
 }
 
+/* For the navigation link list on the home page */
 p.list {
   line-height: 0.3
 }
 
+/* A 1x2 grid for the home page layout */
 #home-grid {
   display: grid;
   grid-template-columns: auto auto;
 }
 
+/* Margins for the restaurant page */
 #restaurant {
   margin-left: 30px;
   margin-right: 50vw;
 }
 
+/* Bolding restaurant info categories on the restaurant page */
 span.category {
   font-weight: bold;
 }
@@ -29,6 +36,7 @@ span.category {
   padding: 4px;
 }
 
+/* Navigation links are highlighted when hovered over */
 .nav-link:hover {
 background-color: rgb(255, 243, 80)
 }
@@ -42,6 +50,7 @@ background-color: rgb(255, 243, 80)
   color: white;
 }
 
+/* "Back to Home" link is highlighted when hovered over */
 .single-link:hover {
 background-color: rgb(255, 243, 80);
 color: black;

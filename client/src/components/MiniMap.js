@@ -1,3 +1,6 @@
+// This file is for the smaller map used on every restaurant page.
+
+// Necessary Imports - mainly Leaflet stuff for this page:
 import "../styles/main.css";
 import { MapContainer, TileLayer, Marker, Popup, useMap } from "react-leaflet";
 import L from "leaflet";
@@ -25,16 +28,20 @@ function MiniMap(props) {
   }
 
   return (
+    // Map center starts out as neighborhood center but will change based on restaurant location. Zoom and dimensions will stay the same unless user changes the zoom.
     <MapContainer
       center={props.center}
       zoom={17.5}
       style={{ height: "300px", width: "450px" }}
     >
+      {/* ChangeView allows the map center to change from the default to whatever the restaurant location is */}
       <ChangeView center={mapCenter}/>
+      {/* Map type */}
       <TileLayer
         url="https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png"
         attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>'
       />
+      {/* Marker position and pop-up content are based on the restaurant (passed as props) */}
       <Marker position={props.center} icon={DefaultIcon}>
         <Popup>
           <div id="page-popup">{props.name}</div>
